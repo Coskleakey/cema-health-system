@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Register Client{% endblock %}
+
+{% block content %}
+<h3>Register a New Client</h3>
+
+<form method="POST">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit" class="btn btn-primary">Register</button>
+  <a href="{% url 'client-list' %}" class="btn btn-secondary">Back to List</a>
+</form>
+{% endblock %}

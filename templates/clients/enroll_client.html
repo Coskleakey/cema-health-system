@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}Enroll Client{% endblock %}
+
+{% block content %}
+<h3>Enroll Client in Health Programs</h3>
+
+<form method="POST">
+  {% csrf_token %}
+  
+  <div class="form-group">
+    <label for="id_client">Client</label>
+    {{ form.client }}
+  </div>
+  
+  <div class="form-group">
+    <label for="id_programs">Programs</label>
+    {{ form.programs }}
+  </div>
+
+  <button type="submit" class="btn btn-success">Enroll</button>
+  <a href="{% url 'client-list' %}" class="btn btn-secondary">Back to List</a>
+</form>
+{% endblock %}

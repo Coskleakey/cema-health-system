@@ -1,7 +1,6 @@
 from django.db import models
 from programs.models import Program
 
-
 # Create your models here.
 class Client(models.Model):
     GENDER_CHOICES = [
