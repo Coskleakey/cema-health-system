@@ -46,3 +46,7 @@ python manage.py createsuperuser
 
 # Start the server
 python manage.py runserver
+
+Prototype demonstration 
+
+https://www.loom.com/share/59a5f01d2df14b7cb4720dd43e1b9db4
